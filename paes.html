@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --header-height: 70px;
+        }
+        body {
+            margin: 0;
+            background-color: rgb(231, 231, 231);
+        }
+        a {
+            text-decoration: none;
+        }
+
+        /* Botões */
+        .botao {
+            display:inline-block;
+            padding: 10px 20px;
+            border: 1px solid yellow;
+            border-radius: 15px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .botao-secundario {
+            color: #fff;
+        }
+        .botao-primario {
+            color: black;
+            background-color: yellow;
+        }
+
+        /* Cabeçalho */
+        header {
+            height: var(--header-height);
+            margin: 0px 80px;
+            display: flex;
+        } 
+        .logo {
+            flex: 1;
+            align-self: center;
+        }
+        .logo img{
+            border-radius: 100%;
+        }
+        .menu {
+            font-size: 20px;
+            text-align: center;
+            align-self: center;
+        }
+        .menu a {
+            color: #000000;
+            font-size: 16px;
+            align-self: center;
+            padding-left: 20px
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            height: calc(100vh - var(--header-height));
+        }
+        .hero .imagem {
+            background-image: url("./images.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+        }
+        .imagem .overlay {
+            width: 100%;
+            height: 100%;
+            background: rgba(172, 91, 38, 0.76);
+            opacity: 0.8;   
+        }
+        .hero .conteudo {
+            z-index: 2;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hero .conteudo .titulo {
+            font-size: 70px;
+            color: yellow;
+            text-align: center;
+        }
+        .hero .conteudo .subtitulo {
+            font-size: 50px;
+            color: #fff;
+            text-align: center ;
+        }
+        .hero .botoes { 
+            margin-top: 20px;
+        }
+        .hero .botoes .botao {
+            margin: 0px 5px;
+            width: 190px
+        }
+        .ingredientes {
+            padding-left: 50px;
+            display: flex;
+        }
+        .texto-ingredientes p {
+            padding-left: 90px;
+            margin: 0%;
+            font-size: 30px;
+            padding-left: 60px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .titulo-pag2-1 {
+            color: rgb(44, 1, 1);
+            margin: 0px;
+        }
+        .titulo-pag2-2 {
+            color: rgb(255, 187, 0);
+            margin: 0px;
+        }
+        .titulo-pag2-3 {
+            font-size: 300px;
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagem2.jpeg" width="62" height="62" /> 
+        </div>
+        <div class="menu">
+            <a target="_blank" href="https://www.instagram.com/roselma_zambarda/">INÍCIO</a>
+            <a target="_blank" href="#">PRODUTOS</a>
+            <a target="_blank" href="#">HISTÓRIA</a>
+            <a target="_blank" href="#">NOVIDADES</a>
+            <a target="_blank" href="#">CONTATO</a>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="imagem">
+            <div class="overlay"></div>
+        </div>
+        <b>
+        <div class="conteudo">
+            <div class="titulo"><i>Humm !!!</i></div>
+            <div class="subtitulo">É de dar água na boca!</div>
+        </b>
+            <div class="botoes">
+                <a class="botao botao-secundario" target="_blank" href="#">Seja um distribuidor</a>
+                <a class="botao botao-primario" target="_blank" href="#"> Agende uma visita</a>
+                </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="ingredientes"> 
+        <img src="trigo.jpg" width="700" height="700" />
+        <div class="texto-ingredientes">
+            <p class="titulo-pag2-1">INGREDIENTES</p>
+            <p class="titulo-pag2-2">SELECIONADOS</p>
+            <br>
+            <br>
+            <p class="titulo-pag2-3">Os ingredientes sdrfgyuiuutrewaserdtyubxrz\zxdfcgvhb
+                jnkmvzdfghjkm
+                zxrcvbhnjkmedrtfyunmkwexrctvybvcxrewqwexrcvbhnjhgytfdresdfghjkjuyt6
+                zxrtvybunierctvybm 
+            </p>
+        </div>
+    </div>
+</body>
+</html>
